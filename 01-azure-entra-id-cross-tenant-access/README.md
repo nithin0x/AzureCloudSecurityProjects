@@ -11,32 +11,32 @@ This project sets up cross-tenant access and passwordless authentication across 
 │                        AZURE ENTRA ID (TENANT)                              │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  ┌────────────────────────────┐      ┌────────────────────────────┐        │
-│  │   SECURITY SUBSCRIPTION    │      │    WORKLOAD SUBSCRIPTION   │        │
-│  │   (Tenant: corp.onmicro..) │      │   (Tenant: partner.com)    │        │
-│  │                            │      │                            │        │
-│  │  ┌──────────────────────┐  │      │  ┌──────────────────────┐  │        │
+│  ┌────────────────────────────┐      ┌────────────────────────────┐         │
+│  │   SECURITY SUBSCRIPTION    │      │    WORKLOAD SUBSCRIPTION   │         │
+│  │   (Tenant: corp.onmicro..) │      │   (Tenant: partner.com)    │         │
+│  │                            │      │                            │         │
+│  │  ┌──────────────────────┐  │      │  ┌──────────────────────┐  │         │
 │  │  │  Managed Identity /  │  │      │  │  Azure RBAC Role      │  │        │
 │  │  │  Service Principal   │──┼──────┼─▶│  Assignment          │  │        │
-│  │  │  "SecurityAdmin"     │  │ B2B  │  │  "SecurityReader"    │  │        │
-│  │  │                      │  │Cross │  │                      │  │        │
-│  │  │  ┌────────────────┐  │  │Tenant│  │  ┌────────────────┐  │  │        │
-│  │  │  │ Federated      │  │  │      │  │  │ Trust Settings │  │  │        │
-│  │  │  │ Credential /   │  │  │      │  │  │                │  │  │        │
-│  │  │  │ OIDC Token     │  │  │      │  │  │ Condition:     │  │  │        │
-│  │  │  └────────────────┘  │  │      │  │  │ MFA Claim      │  │  │        │
-│  │  └──────────────────────┘  │      │  │  │ Compliant Devs │  │  │        │
-│  │                            │      │  │  └────────────────┘  │  │        │
-│  │  └────────────────────────────┘      │  └──────────────────────┘  │        │
-│  │                                      └────────────────────────────┘        │
-│  │  ┌─────────────────────────────────────────────────────────────┐            │
-│  │  │              AZURE POLICY + CONDITIONAL ACCESS              │            │
-│  │  │  • Require MFA for all admin roles                          │            │
-│  │  │  • Block legacy authentication                              │            │
-│  │  │  • Require compliant/Entra-joined devices                   │            │
-│  │  │  • PIM-enforced JIT for privileged roles                    │            │
-│  │  └─────────────────────────────────────────────────────────────┘            │
-│  └─────────────────────────────────────────────────────────────────────────────┘
+│  │  │  "SecurityAdmin"     │  │ B2B  │  │  "SecurityReader"    │  │         │
+│  │  │                      │  │Cross │  │                      │  │         │
+│  │  │  ┌────────────────┐  │  │Tenant│  │  ┌────────────────┐  │  │         │
+│  │  │  │ Federated      │  │  │      │  │  │ Trust Settings │  │  │         │
+│  │  │  │ Credential /   │  │  │      │  │  │                │  │  │         │
+│  │  │  │ OIDC Token     │  │  │      │  │  │ Condition:     │  │  │         │
+│  │  │  └────────────────┘  │  │      │  │  │ MFA Claim      │  │  │         │
+│  │  └──────────────────────┘  │      │  │  │ Compliant Devs │  │  │         │
+│  │                            │      │  │  └────────────────┘  │  │         │
+│  │  └────────────────────────────┘      │  └──────────────────────┘  │      │
+│  │                                      └────────────────────────────┘      │
+│  │  ┌─────────────────────────────────────────────────────────────┐         │
+│  │  │              AZURE POLICY + CONDITIONAL ACCESS              │         │
+│  │  │  • Require MFA for all admin roles                          │         │
+│  │  │  • Block legacy authentication                              │         │
+│  │  │  • Require compliant/Entra-joined devices                   │         │
+│  │  │  • PIM-enforced JIT for privileged roles                    │         │
+│  │  └─────────────────────────────────────────────────────────────┘         │
+│  └──────────────────────────────────────────────────────────────────────────┘
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 ## Implementation steps
