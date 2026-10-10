@@ -7,25 +7,25 @@ A collection of production-ready Azure cloud security projects covering identity
 │                    AZURE CLOUD SECURITY PORTFOLIO                           │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐      │
-│   │  Identity   │  │   Network   │  │  DevSecOps  │  │ Compliance  │      │
-│   │  & Access   │  │   Security  │  │             │  │  & Audit    │      │
-│   └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘      │
-│          │                │                │                │             │
-│          ▼                ▼                ▼                ▼             │
-│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐      │
-│   │  Project 1  │  │  Project 2  │  │  Project 3  │  │  Project 4  │      │
-│   │  Entra ID   │  │  VNet+Bicep │  │  Azure      │  │  Defender   │      │
-│   │  Cross-     │  │    IaC      │  │  DevOps     │  │  for Cloud  │      │
-│   │  Tenant     │  │             │  │  Security   │  │   Audit     │      │
-│   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘      │
-│                                                                             │
-│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐      │
-│   │  Project 5  │  │  Project 6  │  │  Project 7  │  │  Project 8  │      │
-│   │  Sentinel   │  │ Break-Glass │  │ Azure Key   │  │   Threat    │      │
-│   │  Centralized│  │  PIM Access │  │   Vault     │  │  Modeling   │      │
-│   │  Logging    │  │             │  │  Secrets    │  │  (STRIDE)   │      │
-│   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘      │
+│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
+│   │  Identity   │  │   Network   │  │  DevSecOps  │  │ Compliance  │        │
+│   │  & Access   │  │   Security  │  │             │  │  & Audit    │        │
+│   └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘        │
+│          │                │                │                │               │
+│          ▼                ▼                ▼                ▼               │
+│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
+│   │  Project 1  │  │  Project 2  │  │  Project 3  │  │  Project 4  │        │
+│   │  Entra ID   │  │  VNet+Bicep │  │  Azure      │  │  Defender   │        │
+│   │  Cross-     │  │    IaC      │  │  DevOps     │  │  for Cloud  │        │
+│   │  Tenant     │  │             │  │  Security   │  │   Audit     │        │
+│   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘        │
+  │                                                                           │
+│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
+│   │  Project 5  │  │  Project 6  │  │  Project 7  │  │  Project 8  │        │
+│   │  Sentinel   │  │ Break-Glass │  │ Azure Key   │  │   Threat    │        │
+│   │  Centralized│  │  PIM Access │  │   Vault     │  │  Modeling   │        │
+│   │  Logging    │  │             │  │  Secrets    │  │  (STRIDE)   │        │
+│   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘        │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
